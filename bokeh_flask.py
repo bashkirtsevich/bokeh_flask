@@ -15,7 +15,7 @@ def create_figure():
         tools="pan,box_zoom,reset,save",
         y_axis_type="log", y_range=[0.001, 10 ** 11], title="log axis example",
         x_axis_label='sections', y_axis_label='particles',
-        plot_width=1500, plot_height=900
+        sizing_mode='stretch_both'
     )
 
     p.line(x, x, legend="y=x")
